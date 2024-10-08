@@ -1,8 +1,7 @@
 print('Это основной файл main.py, его имя в процессе выполнения программы:', __name__)
 
 
-import pack_2
+from pack_2.pack_21.file_211 import r
 
 
-print(dir())
-print(dir(pack_2))
+print('r =', r)
