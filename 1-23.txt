@@ -1,0 +1,30 @@
+Как включить кол JavaScript в страницу
+
+Начнем с начала: чтобы продвинуться в изучении JavaScript, необходимо знать, как включить код в страницу.
+Как же это делается? Конечно, при помощи элемента <script>
+Давайте возьмем скучную старую веб-страницу и определим для нее динамическое поведение в элементе <script>
+Пока не нужно задумываться над смыслом того, что мы включаем в элемент <script>,-сейчас важнее понять, как 
+вообще работает JavaScript.
+
+Стандартный заголовок HTML5
+doctype, элементы <html> and <head>
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Just a Generic Page</title>
+<script>
+setTimeout(wakeUpUser, 5000);
+function wakeUpUser(){
+	alert("Are you going to stare at this boring page forever?");
+}
+</script>
+</head>
+(iDONi впервые в жизне в консоле запускает код и видит результат в реальном времени. какой ты iDONi, а)
+<body>
+<h1> Just a generic heading </h1>
+<p>Not a lot to read about here. I'm just an obligatory paragraph living in an example in a JavaScript book.
+I'm booking for aomething to make my life more exiciting</p>
+</body>
+</html>
