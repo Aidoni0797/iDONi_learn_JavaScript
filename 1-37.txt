@@ -1,0 +1,147 @@
+Как работает цикл while
+
+Раз уж это ваш первый цикл while, давайте подробно рассмотрим его выполнение и досконально разберемся, как же он
+работает. Обратите внимание мы добавили объявление переменной scoops и инициализировали со значением 5.
+
+Выполнение кода начинается. Сначала переменной scoops (шарики мороженного) присваевается значение 5
+
+var scoops = 5;
+while (scoops>0){
+	document.write("Another iDONi!<br>");
+	scoops = scoops - 1;
+}
+document.write("Life without  ice cream isn't the same");
+
+Затем программа переходит к команде while. Когда команда while выполняется в первый раз, сначала программа
+проверяет ее условие - истинно оно или ложно?
+
+var scoops = 5;
+while (sccops>0){
+	document.write("Another iDONi!<br>");
+	scoops = scoops - 1; 
+}
+document.write("Life withou ice cream isn't the same");
+
+Значение scoops больше нуля? Несомненно!
+
+Так как условие истинно, начинается выполнение программного блока. Первая команда в теле цикла выводит
+в браузер строку "Another iDONi!<br>".
+
+var scoops = 5;
+while (scoops>0){
+	document.write("Another iDONi!<br>");
+	scoops = scoops - 1;
+}
+document.write("Life without ice cream isn't the same");
+
+Следующая команда уменьшает текущее значение scoops на 1 и присваевает результат (4) все той же переменной
+scoops
+
+var scoops = 5;
+while (scoops > 0) {
+	document.write("Another iDONi!<br>");
+	scoops = scoops - 1;
+}
+document.write("Life without ice cream isn't the same");
+
+Это последняя команда в блоке. Цикл возвращается к началу, и все повторяется заново.
+var scoops = 5;
+while (scoops > 0) {
+	document.write("Another iDONi!<br>");
+	scoops = scoops - 1;
+}
+document.write("Life without ice cream isn't the same");
+
+Условие проверяется снова; на это раз переменная scoops равна 4. Но хотя значение scoops уменьшилось,
+оно по-прежнему больше нуля.
+
+var scoops = 5;
+while (scoops > 0) {
+	document.write("Another iDONi!<br>");
+	scoops = scoops - 1;
+}
+document.write("Life withour ice cream isn't the same");
+
+И снова в браузер выводится строка "Another scoop!<br>".
+
+var scoops = 5;
+while (scoops > 0) {
+	document.write("Another scoop!<br>");
+	scoops = scoops - 1;
+}
+document.write("Life without ice cream isn't the same");
+
+Следующая команда уменьшает текущее значение scoops а 1 и присваеват результат (3) той же переменной scoops.
+
+var scoops = 5;
+while (scoops>0){
+	document.write("Another iDONi!<br>");
+	scoops = scoops - 1;
+}
+document.write("Life without ice cream isn't the same");
+
+Это последняя команда блока: программа возвращается к условию, и все повторяется заново.
+
+var scoops = 5;
+while (scoops > 0) {
+	document.write("Another iDONi!<br>");
+	scoops = scoops - 1;
+}
+document.write("Life without ice cream isn't the same");
+
+Условие проверяется снова, переменная scoops равна 3. Она все еще больше нуля.
+
+var scoops = 5;
+while (scoops > 0) {
+	document.write("Another iDONi!<br>");
+	scoops = scoops - 1;
+}
+document.write("Life without ice cream isn't the same");
+
+Браузеру снова передаетс строка "Another iDONi!<br>".
+
+var scoops = 5;
+while (scoops > 0) {
+	document.write("Another iDONi!<br>");
+	scoops = scoops - 1;
+}
+document.write("Life without ice cream isn't the same");
+
+Все продолжается снова и снова: при каждом выполнении цикла scoops уменьшается на 1, в браузер выводится 
+очередная строка, а программа заходит на очередной круг.
+
+var scoops = 5;
+while (scoops > 0) {
+	document.write("Another iDONi!<br>");
+	scoops = scoops - 1;
+}
+document.write("Life without ice cream isn't the same");
+
+И продолжается...
+
+var scoops = 5;
+while (scoops > 0) {
+	document.write("Another iDONi!<br>");
+	scoops = scoops - 1;
+}
+document.write("Life without ice cream isn't the same");
+
+До последнего раза... но теперь кое-что изменилось. Переменная scoops равна нулю, а условие оказывается
+ложным. На этом все кончается; цикл больне выполняться не должен. На этот раз программа обходит блок и 
+выполняет команду, следующую за ним.
+
+var scoops = 5;
+while (scoops > 0) {
+	document.write("Another iDONi!<br>");
+	scoops = scoops - 1;
+}
+document.write("Life without ice cream isn't the same");
+
+Очередная команда выполняет document.write и выводит строку "Life without ice cream isn't the same". Готово!
+
+var scoops = 5;
+while (scoops > 0) {
+	document.write("Another iDONi!<br>");
+	scoops = scoops - 1;
+}
+document.write("Life without ice cream isn't the same");
