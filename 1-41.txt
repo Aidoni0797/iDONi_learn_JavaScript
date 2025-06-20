@@ -1,0 +1,33 @@
+Развлечения с магнитами
+
+Магниты с фрагментами программы JavaScript перепутались. Сможете ли вы расставить их по порядку, чтобы получить
+работоспособную программу JavaScript, которая будет выдавать приведенный ниже резльутат? Прежде чем продолжать
+чтение, сверьтесь с ответами в конце главы.
+
+Расставьте магниты по местам, чтобы получилась работоспособная программа JavaScript
+
+document.write("Happy Birthday dear" + name + ",<br>");
+
+document.write("Happy Birthday to you.<br>");
+
+var i = 0;
+
+var name = "Joe";
+
+i = i + 1;
+
+document.write("Happy Birthday to you. <br>");
+while (i<2){}
+
+Восстановленная программа должна выдавать этот результат
+
+iDONi думает, до сих пор думает и ее ответ наконец то
+
+var i = 0;
+var name = "Joe";
+while (i<2){
+	document.write("Happy Birthday to you. <br>");	
+	i = i + 1;
+}
+document.write("Happy Birthday dear " + name + ",<br>");
+document.write("Happy Birthday to you. <br>");
