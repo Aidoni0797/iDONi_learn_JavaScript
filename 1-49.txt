@@ -1,0 +1,57 @@
+Разметка и код: пути расходятся
+
+Расставаться неприятно, но другого выхода не было. Пришло время взять код JavaScript и посетить 
+его в отдельном файле. Вот как это делается...
+
+1. Откройте index.html и выделите весь код (то есть весь текст между тегами <script>). Выделение должно
+выглядеть примерно так:
+
+<! doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>My First JavaScript</title>
+</head>
+<body>
+<script>
+var word = "bottles";
+var count = 99;
+while (count>0){
+	console.log(count+" "+word+" of beer on the wall");
+	console.log(count+" "+word+" of beer.");
+	console.log("Take one down, pass it round.");
+	count = count-1;
+	if (count>0){
+		console.log(count+" "+word+" of beer on the wall.");
+	}else{
+		console.log("No more "+word+" of beer on the wall.");
+	}
+</script>
+</body>
+</html>
+
+2. Создайте в редакторе новый файл с именем "code.js"  вставьте в него скопированный код. Сохраните файл 
+"code.js"
+
+3. Теперь нужно включить ссылку на файл "code.js" в файл "index.html", чтобы файл загружался при 
+загрузке страницы. Для этого удалите код JavaScript из "index.html", но оставьте теги <script>.
+Затем добавьте в открывающий тег <script> атрибут src со ссылкой на "code.js".
+
+<!doctype html>
+<head>
+<meta charset="utf-8">
+<title>My First JavaScript</title>
+</head>
+<body>
+<script src="code.js"> - //атрибут src элемента <script> содержит ссылку на файл JavaScript
+//Здесь был код
+</script> - //Как ни странно, заверщающий тег <script> все равно необходим, хотя между двумя тегами нет кода
+</body>
+</html>
+
+4. Вот и все, косметическая операция завершена. Давайте посмотрим, успешно ли она прошла. Перезагрузите 
+страницу "index.html"; результат должен выглядеть точно так же, как прежде. Учтите, чтопри использовании
+ссылки вида src="code.js" предпологается, что файл кода расположен в одном каталоге с файлом HTML.
+
+Результат выглядит так же, как прежде, но теперь разметка HTML и код JavaScript хранятся в разных файлах.
+Согласитесь, такая структура выглядит более стройной и удобной, и создает меньше проблем с сопровождением.
