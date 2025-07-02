@@ -1,0 +1,41 @@
+Вывод данных после игры
+
+Переменной isSunk присваивается значение true, и выполнение цикла while прекрещается. Программа, в которую мы 
+вложили столько сил, перестает выполнять тело цикла, а игра подходит к концу. Но нужно ещещ вывести информацию
+о том, насколько хорошо пользователь справился своей задачей:
+
+var state = "You took " + guesses + " guesses to sink the battleship, "+
+"which means your shooting accuracy was "+(3/guesses);
+
+alert(stats);
+
+//Здесь создается строка с сообщением, включающим информацию о количестве выстрелов и точности. Обратите
+внимание: строка разбивается на фрагменты (для добавления переменной guesses и удобства чтения), которые
+сцепляются оператором конкатенации "+". Пока введите код в приведенном виде, более подробное описание будет
+дано далее.
+
+Добавьте этот фрагмент и проверку уничтожения корабля в основную программу:
+
+//Объявления переменных
+
+//Цикл: пока корабль не будет потоплен
+while (isSunk == false){
+	guess = promt("Ready, aim, fire! (enter a number from 0-6):");
+	if (guess<0 || guess>6){
+		alert("Please enter a valid cell number!");
+	}else{
+		guesses = guesses + 1;
+		if (guesses == location1 || guess == location2 || guess == location3){
+			hits = hits + 1;
+			if (hits == 3){
+				isSunk = true;
+				alert("You sank my battleship!");
+			}
+		}
+	}
+}
+
+var stats = "You took " + guesses + " guesses to sink the battleship, "+
+"which means your shooting accuracy was "+(3/guesses);
+
+alert(stats);
