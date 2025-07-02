@@ -1,0 +1,30 @@
+
+Возьми в руку карандаш
+
+Мы подготовили несколько булевскиз выражений, значения которых необходимо вычислить. Заполните пропуски
+и сверьтесь с ответами в конце главы, прежде чем двигаться дальше.
+
+var temp = 81;
+var willRain = true;
+var humid = (temp>80 && willRain==true);
+Чему равно значение humid? iDONi отвечает - True
+
+var guess = 6;
+var isValid = (guess >=0 && guess <= 6);
+Чему равно значение isValid?iDONi отвечает - True
+
+var kB = 1287;
+var tooBig = (kB>1000);
+var urgent = true;
+var sendFile = (urgent==true || tooBig == false);
+Чему равно значение sendFile?iDONi отвечает - True
+
+var keyPressed = "N";
+var points = 142;
+var level;
+if (keyPressed == "Y" || (points>100 && points<200)){
+	level = 2;
+} else{
+	level = 1;
+}
+Чему равно значение level?iDONi отвечает - 2
