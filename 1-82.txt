@@ -1,0 +1,17 @@
+”пражнение
+
+¬низу приведены две команды, использующие переменные onSale and inStock в услови€х дл€ вычислени€ переменной
+buyit. –ассмотрите все возможные комбинации значений inStock and onSale в обеих командах. — какой версией
+buyit будет чаще принимать истинное значение?
+
+var buyIt = (inStock || onSale);
+true - true - true
+true - false - true
+false - true - true
+false - false - false
+
+var buyIt = (inStock && onSale);
+true - true - true
+true - false - false
+false - true - false
+false - false - false
