@@ -1,0 +1,45 @@
+А когда все будет сделано... Выполняется логика тела функции (в этом примере для имени Rover и веса
+23 выводится сообщение "WOOF WOOF"), и работа функции на этом завершается. После этого управление
+возвращается команде, следующей за вызовом bark.
+
+function bark(name, weight){
+	if (weight>20){
+		console.log(name + " says WOOF WOOF");
+	} else {
+		console.log(name + " saysss woof woof");
+	}
+}
+
+bark("rover", 23);
+bark("spot", 13);
+bark("spike", 53);
+bark("lady", 17);
+
+#Когда функция завершится, браузер переходит к следующей строке кода, идущей вслед за вызовом функции.
+
+#Здесь функция вызывается снова, с другими аргументами, и процесс начинается заново!
+
+Возьми в руку карандаш
+
+Ниже приведено несколько примеров вызовов bark. Рядом с каждым вызовом напишите, какой, по вашему мнению,
+он выдаст результат (или сообщение об ошибке). Прежде чем двигаться дальше, сверьтесь с ответами
+в конце главы.
+Напишите, какое сообщение бдет выведено на консоль
+
+Хмм... А что вы скажете об этих вызовах? Как вы думаете, что произойдет?
+
+function bark(name, weight){
+	if (weight>20){
+		console.log(name + " says WOOF WOOF");
+	} else {
+		console.log(name + " saysss woof woof");
+	}
+}
+
+
+bark("juno", 20); Answer iDONi - juno saysss woof woof
+bark("scottie", -1); Answer iDONi - scottie saysss woof woof
+bark("dino", 0, 0); Answer iDONi - dino saysss woof woof
+bark("fido", "20"); Answer iDONi - fido saysss woof woof
+bark("lady", 10); Answer iDONi - lady saysss woof woof
+bark("bruno", 21); Answer iDONi - bruno says WOOF WOOF
