@@ -1,0 +1,26 @@
+Развлечения с магнитами
+
+Магниты с фрагментами программы JavaScript перепутались. Удастся ли вам расставить магниты по местам и
+восстановить работоспособную программу, чтоюы она выдавала приведенный далее результат? Возможно,
+какие-то магниты окажутся лишними. Сверьтесь с ответами в конце главы.
+
+function whatShallIWear(temp){
+
+if (temp<60) {
+	console.log("Wear a jacket");
+} else if (temp<70){
+	console.log("wear a sweater");
+} else {
+	console.log("Wear t-shirt");
+}
+}
+
+whatShallIWear(80);
+whatShallIWear(60);
+whatShallIWear(50);
+
+Wear t-shirt
+
+wear a sweater
+
+Wear a jacket
