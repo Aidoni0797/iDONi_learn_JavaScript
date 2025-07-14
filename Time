@@ -1,0 +1,8 @@
+
+from datetime import datetime, timedelta
+
+last_meal = input("Введите время последнего приёма пищи (в формате ЧЧ:ММ): ")
+now = datetime.now()
+meal_time = datetime.strptime(f"{now.date()} {last_meal}", "%Y-%m-%d %H:%M")
+next_meal_time = meal_time + timedelta(hours=36)
+print("Следующий приём пищи:", next_meal_time.strftime("%d.%m.%Y %H:%M"))
