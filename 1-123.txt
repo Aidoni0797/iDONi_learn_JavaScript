@@ -1,0 +1,39 @@
+Умная машина
+ 
+Умная машина - потрясающее изобретение. Она пыхтит, стучит и бренчит, но что же она делает...? Лучше
+спросите когда-нибудь другого. Например, программиста - они утвеждают, что знают, как работает этот
+агрегат. Удастся ли вам разобраться в коде и найти, что же с ним не так?
+
+function clunk(times){
+	var num = times;
+	while (num > 0){
+		display("clunk");
+		num = num - 1;
+	}
+}
+
+function thingamajig(size){
+	var facky = 1;
+	clunkCounter = 0;
+	if (size == 0){
+		display("clank");
+	} else if (size==1){
+		display("thunk");
+	} else {
+		while (size > 1) {
+			facky = facky * size;
+			size = size - 1;
+		}
+		clunk(facky);
+	}
+}
+
+function display(output){
+	console.log(output);
+	clunkCounter = clunkCounter + 1;
+}
+var clunkCounter = 0;
+thingamajig(5);
+console.log(clunkCounter);
+
+Попробуйте передать Умной Машине числа 0,1,2,3,4,5 и т.д. Сможете ли вы понять, как она работает?
