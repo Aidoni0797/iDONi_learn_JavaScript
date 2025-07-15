@@ -1,0 +1,52 @@
+Возьми в руку карандаш
+
+Проанализируйте преведенный ниже код. Чтобы вы о нем сказали? Выберите любые из вариантов, перечисленных
+ниже, сказали? Выберите любые из вариантов, перечисленных ниже, или запишите свои результаты анализа.
+Посмотрите на наше решение.
+
+var dogName = "rover";
+var dogWeight = 23;
+if (dogWeight > 20) {
+	console.log(dogName + " says WOOF WOOF");
+} else {
+	console.log(dogName + " says woof woof");
+}
+
+dogName = "spot";
+dogWeight = 13;
+
+if (digWeight > 20) {
+	console.log(dogName + " says WOOF WOOF");
+} else {
+	console.log(dogName + " says woof woof");
+}
+
+dogName = "spike";
+dogWeight = 53;
+if (dogWeight > 20) {
+	console.log(dogName + " says WOOF WOOF");
+} else {
+	console.log(dogName + " says woof woof");
+}
+
+dogName = "lady";
+dogWeight = 17;
+
+if (dogWeight>20) {
+	console.log(dogName + " says WOOF WOOF");
+} else {
+	console.log(dogName + " says woof woof");
+}
+
+Мы выбрали все варианты
+
+А. Код выглядит избыточным
+
+В. Если нам потребуется исменить выходные данные или добавить новую весовую категорию, в программу придется
+вносить много изменений.
+
+С. Этот код однообразен, его будет скучно набирать!
+
+Д. Код выглядит, мягко говоря, не очень понятно.
+
+Е. Похоже, разработчик думал, что значения weight могут измениться со временем.
