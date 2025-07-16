@@ -1,0 +1,43 @@
+Возьми в руку карандаш
+
+В массиве products хранятся названия сортов мороженного. Названя добавлялись в массив в порядке создания.
+Закончите код так, чтобы он определял и возвращал в переменной recent сорт, созданный последним.
+
+var products = ["Choo Choo Chocolate", "Icy Mint", "Cake Batter", "Bubblegum"];
+
+var last = ___________;
+var recent = products[last];
+
+Опробуйте мой новый Генератор Красивых Фраз - и вы заговорите так же красиво, как ваш начальник или парни
+из отдела маркетинга.
+
+Посмотрите код модного приложения Генератор Красивых Фраз.  Удастся ли вам самостоятельно разобраться в том,
+что оно делает?
+
+Вам показалось, что наше Серьезное Бизнес-Приложение из главы 1 было недостаточно серьезным? Ладно. Попробуйте
+это, если вам нужно показать что-то начальнику.
+
+<!doctype html>
+<html lang = "en">
+<head>
+<title>Phrase-o-matic</title>
+<meta charset="utf-8">
+<script>
+	function makePharases(){
+		var words1 = ["24/7", "multi-tier", "30,000 foot", B-to-B", "win-win"];
+		var words2 = ["empowered", "value-added", "orinted", "focused", "aligned"];
+		var words3 = ["process", "solution", "tipping-point", "strategy", "vision"];
+	
+		var rand1 = Math.floor(Math.random()*words1.length);
+		var rand2 = Math.floor(Math.random()*words2.length);
+		var rand3 = Math.floor(Math.random()*words3.length);
+		
+		var phrase = words1[rand1]+" "+words2[rand2]+" "+words3[rand3];
+		alert(phrase);
+	}
+	makePhrases();
+</script>
+</head>
+<body>
+</body>
+</html>
