@@ -1,0 +1,28 @@
+¬озьми в руку карандаш
+
+ѕерепишите программу с магнитами (вернитесь на пару страниц назад) так, чтобы вместо цикла while
+в ней использовалс€ цикл for. ≈сли вам понадобитс€ подсказка, обратитесь к описанию цикла while
+на предыдущей странице и посмотрите, кака€ часть цикла for соответствует той или иной части исходного цикла.
+
+var products = [
+"Choo Choo Chocolate",
+"Icy Mint",
+"Cake Batter",
+"Bubblegum"
+];
+
+var hasBubbleGum = [
+false,
+false,
+false,
+true
+];
+
+var i = 0;
+
+while (i<hasBubbleGum.length){
+	if (hasBubbleGum[i]){
+		console.log(products[i]+" contains bubble gum");
+	}
+	i = i+1;
+}
