@@ -1,0 +1,26 @@
+Преобразование псевдокода
+
+Упражнение
+
+Я справился с псевдокодом. Посмотрите, что у меня получилось. Теперь ваша очередь - переведите его на 
+JavaScript. И не забудьте свериться с ответом.
+
+FUNCTION GETMOSTCOSTEFFECTIVESOLUTION(SCORE, COSTS, HIGHSCORE)
+ОБЪЯВИТЬ переменную cost и присвоить ей 100
+ОБЪЯВИТЬ переменную index
+FOR var i=0; i<scores.length; i++
+	ЕСЛИ результат образца в score[i] является максимальным
+		ЕСЛИ текущее значение затрат больше затрат образца
+		ТО
+			ПРИСВОИТЬ index значение переменной
+			ПРИСВОИТЬ затраты на производство бразца переменной cost
+		КОНЕЦ ЕСЛИ
+	КОНЕЦ ЕСЛИ
+КОНЕЦ FOR
+RETURN index
+
+function getMostCostEffectiveSolution(scores, costs, highscore){
+	Переведите псевдокод на JavaScript
+}
+var mostCostEffective = getMostCostEffectiveSolution(scores, costs, highScore);
+console.log(Bubble Solution #"+mostCostEffevtive+" is the most cost effective");
