@@ -1,0 +1,14 @@
+Возьмите в руку карандаш
+Решение
+
+Перепишите программу с магнитами так, чтобы вместо while использовался цикл for. Если вам понадобится
+подсказка, обратитесь к описанию цикла while и посмотрите, какая часть цикла for соответствует той или иной
+части исходного кода. Ниже приведено наше решение.
+
+var products = ["Choo Choo Chocolate", "Icy Mint", "Cake Batter", "Bubblegum"];
+var hasBubbleGum = [false, false, false, true];
+for (var i=0; i<hasBubbleGum.length; i=i+1){
+	if (hasBubbleGum[i]){
+		console.log(products[i]+" contains bubblr gum");
+	}
+}
