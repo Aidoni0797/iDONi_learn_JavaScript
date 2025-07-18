@@ -1,0 +1,52 @@
+А теперь все вместе...
+
+Завершив рефакторинг своего кода, внесите  все изменения в bubbles.html(посмотрите на приведеннй код)
+и перезагрузите отчет. Результат должен оставаться таким же, как прежде. Но теперь код имеет существенно лучшую
+структуру и идально подходит для повторного использования. Создайте собственный массив scores и 
+поэкспериментируйте!
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title> Bubble Factory Test Lab</title>
+<script>
+var scores=[60,50,60,58,54,54,58,50,52,54,48,69,34,55,51,52,44,51,69,64,66,55,52,61,46,31,57,52,44,18,
+41,53,55,61,51,44];
+
+function printAndGetHighScore(scores){
+	var highScore=0;
+	var output;
+	for (var i=0;i<scores.length;i++){
+		output="Bubble solution #"+i+" score: "+scores[i];
+		console.log(output);
+		if (scores[i]>highScore){
+			highScore = scores[i];
+		}
+	}
+	return highScore;
+}
+
+function getBestResults(scores, highScore){
+	var bestSolutions = [];
+	for (var i =0; i<scores.length; i++){
+		if (scores[i]==highScore){
+			bestSolutions.push(i);
+		}
+	}
+	return bestSolutoins;
+}
+var highScore = printAndGetHighScore(scores);
+console.log("Bubbles tests: "+scores.length);
+console.log("Highest bubble score: "+highScore);
+
+var bestSolutions = getBestResults(scores, highScore);
+console.log("Solutions with the highest score: "+bestSolutions);
+</script>
+</head>
+<body></body>
+</html>
+
+Это новая функция getBestResults
+
+Результат этой функции используется для вывода списка лучших образцов в отчете. 
