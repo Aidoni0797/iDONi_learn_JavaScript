@@ -1,0 +1,31 @@
+Возьми в руку карандаш
+
+Следующую функцию мы напишем вместе. Она должна создавать массив образцов, имеющих максимальный результат 
+(таких образов может быть несколько, плэтому-то мы и используем массив). Ей будет передаваться массив
+scores и значение highScore, вычисленное функцией printAndGetHighScore. Закончите приведенный ниже код.
+Ответ дан на следующей странице - не подглядывайте! Сначала выполните упражнение самостоятельно, только
+так вы по-настоящему разберетесь.
+
+Исходная версия кода - на случай, если она вам поадобится.
+
+var bestSolutions = [];
+for (var i = 0; i<scores.length;i++){
+	if (scores[i]==highScore){
+		bestColutions.push(i);
+	}
+}
+console.log("Solutions with the highest score: "+bestSolutions);
+
+Работа уже началась, но закончим мы ее вместе с вами.
+
+function getBestResults(_______,__________){
+	var bestSolutions = ___________;
+	for (var i=0;i<scores.length;i++){
+		if (__________==highScore){
+			bestSolution.____;
+		}
+	}
+	return __________;
+}
+var bestSolutions=__________(scores, highScore);
+console.log("Solutions with the highest score: "+bestSolutions);
