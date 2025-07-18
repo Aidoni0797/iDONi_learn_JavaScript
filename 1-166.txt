@@ -1,0 +1,48 @@
+Краткий обзор кода...
+
+Пройдемся по написанному нами коду и определим, какие части стоило бы асбтрагировать в функции.
+
+Код Bubbles-R-Us.
+
+Массив scores не должен объявляться в функциях, работающихх с результатами, потому что  они будут
+различаться при каждом использовании функции. Вместо этого мы будем передавать scores в аргументе,
+чтобы функции могли использовать массив scores для генерирования результатов.
+
+Этот первый фрагмент кода используется для вывода всех результатов одновременно с вычислением максимального
+результата в массиве. Его можно вынести в функцию printAndGetHighScore.
+
+Второй фрагмент кода предназначен для вычисления лучших результатов для максимального счета. Его можно
+вынести в функцию getBestResults.
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset = "utf-8">
+<title>Bubble Factory Test Lab</title>
+<script>
+var scores = [60,50,60,58,54,54,58,50,52,54,48,69,34,55,51,52,44,51,69,64,66,55,52,61,46,31,57,52,44,18,
+41,53,55,61,51,44];
+var highScore=0;
+var output;
+
+for (var i=0;i<scores.length;i++){
+	output="Bubble solution #"+i+" score: "+scores[i];
+	console.log(output);
+	if (scores[i]>highScore){
+		highScore=scores[i];
+	}
+}
+console.log("Bubbles tests: "+scores.length);
+console.log("Highest bubble score:"+highScore);
+var bestSolutions = [];
+
+for (var i=0;i<scores.length;i++){
+	if (scores[i]==highScore){
+		bestSolutions.push(i);
+	}
+}
+console.log("Solutions with the highest score:"+bestSolutions);
+</script>
+</head>
+<body></body>
+</html>
