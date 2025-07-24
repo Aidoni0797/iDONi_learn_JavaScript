@@ -1,0 +1,36 @@
+Возьми в руку карандаш
+
+Вам вручили сверхсекретный файл и две функции, позволяющие читать и записывать содержимое файла, но только
+при наличии пароля. Первая функция, getSecret, возвращает содержимое файла, если пароль указан правильно,
+и регистрирует все попытки обращения к файлу. Вторая функция, setSecret, обновляет содержимое файла и 
+обнуляет счетчик обращений. Заполните пробелы в приведенном ниже коде и протестируйте функции.
+
+function getSecret(file, secretPassword){
+	_______.opened = ________.opened + 1;
+	if (secretPassword == ________.password){
+		return _____.contents;
+	} else {
+		return "Invalid password! No secret for you.";
+	}
+}
+
+function setSecret(file, secretPassword, secret) {
+	if (secretPassword == __________.password) {
+		____.opened = 0;
+		____.contents = secret;
+	}
+}
+
+var superSecretFile = {
+	level: "classified",
+	opened: 0,
+	password: 2,
+	contents: "Dr.Evel's next meeting is in Datroit."
+};
+
+var secret = getSecret(_________,_____);
+console.log(secret);
+
+setSecret(__________,___,"DrEvel's next meeting is in Philadelphia.");
+secret = getSecret(_________,____);
+console.log(secret);
